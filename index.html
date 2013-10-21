@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="mainsite">
+  <head>
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Diego Ruiz - IT Professional</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/2.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/resume.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>		
+	</head>
+	<body>
+		<div class="dr10_primary_container">
+			<div class="dr10_sidebar_wrapper">
+				<div class="dr10_sidebar_container">
+					<header class="dr10_s_title_container">
+						<h1 class="dr10_s_title_h1">
+							<a class="dr10_nav_link title_link" href="/#/">Diego Ruiz - IT Professional</a>
+						</h1><!-- dr10_s_title_h1 -->
+					</header><!-- /dr10_s_title_container -->
+					<nav class="dr10_s_nav_container">
+						<ul class="dr10_s_nav_list">
+							<li><a class="dr10_nav_link" href="/#/">Home</a></li>
+							<li><a class="dr10_nav_link" href="/#/about">About</a></li>
+							<li><a class="dr10_nav_link" href="/#/education">Education</a></li>
+							<li><a class="dr10_nav_link" href="/#/technical-skills">Technical Skills</a></li>
+							<li><a class="dr10_nav_link" href="/#/professional">Professional Experience</a></li>
+							<li><a class="dr10_nav_link" href="/#/additional">Additional Experience</a></li>
+							<li><a class="dr10_nav_link" href="/#/other">Other Information</a></li>
+							<li><a class="dr10_nav_link" href="/#/contact">Contact</a></li>
+						</ul><!-- /dr10_s_nav_list -->
+						<select class="dr10_s_nav_select">
+							<option value="/#/">Home</option>
+							<option value="/#/about">About</option>
+							<option value="/#/education">Education</option>
+							<option value="/#/technical-skills">Technical Skills</option>
+							<option value="/#/professional">Professional Experience</option>
+							<option value="/#/additional">Additional Experience</option>
+							<option value="/#/other">Other Information</option>
+							<option value="/#/contact">Contact</option>
+						</select><!-- /dr10_s_nav_select -->
+					</nav><!-- /dr10_s_nav_container-->
+				</div><!-- /dr10_sidebar_wrapper -->
+			</div><!-- /dr10_sidebar_wrapper -->
+			<div class="dr10_content_wrapper" ng-controller="maincontentarea">
+				<div class="dr10_content_container" ng-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div><!-- dr10_content_container -->
+			</div><!-- /dr10_content_wrapper -->
+		</div><!-- /dr10_primary_container -->
+		<footer class="dr10_footer">
+			&copy; Diego Ruiz | <a href="mailto:diegruiz098@gmail.com">diegruiz098@gmail.com</a> <span class="dr10_footer_extra">| <a href="http://www.linkedin.com/pub/diego-ruiz/2b/2/958" target="_blank">LinkedIn</a> | Inspired</span>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+		<script src="includes/bootstrap-gh-pages/ui-bootstrap-tpls-0.6.0.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="assets/js/resume.js"></script>
+	</body>
+</html>
