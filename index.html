@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainsite">
+  <head>
+    <meta charset="utf-8">
+    <title>Site | Diego Ruiz</title>
+    <meta name="author" content="Diego Ruiz"> 
+    <meta name="description" content="Personal Portfolio Site">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/resume.css">
+  </head>
+  <body>
+    <div class="dr10_primary_container">
+      <div class="dr10_sidebar_wrapper">
+        <div class="dr10_sidebar_container">
+          <header class="dr10_s_title_container">
+            <h1 class="dr10_s_title_h1">
+              <a class="dr10_nav_link title_link" href="/#/">Diego Ruiz - IT<br/>Professional</a>
+            </h1><!-- dr10_s_title_h1 -->
+          </header><!-- /dr10_s_title_container -->
+          <nav class="dr10_s_nav_container">
+            <ul class="dr10_s_nav_list">
+              <li><a class="dr10_nav_link" href="#/">Home</a></li>
+              <li><a class="dr10_nav_link" href="#/about">About</a></li>
+              <li><a class="dr10_nav_link" href="#/technical-skills">Technical Skills</a></li>
+              <li><a class="dr10_nav_link" href="#/experience">Experience</a></li>
+              <li><a class="dr10_nav_link" href="#/contact">Contact</a></li>
+            </ul><!-- /dr10_s_nav_list -->
+            <select class="dr10_s_nav_select">
+              <option value="#/">Home</option>
+              <option value="#/about">About</option>
+              <option value="#/technical-skills">Technical Skills</option>
+              <option value="#/experience">Experience</option>
+              <option value="#/contact">Contact</option>
+            </select><!-- /dr10_s_nav_select -->
+          </nav><!-- /dr10_s_nav_container-->
+        </div><!-- /dr10_sidebar_wrapper -->
+      </div><!-- /dr10_sidebar_wrapper -->
+      <div class="dr10_content_wrapper" ng-controller="maincontentarea">
+        <div class="dr10_content_container" ng-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div><!-- dr10_content_container -->
+      </div><!-- /dr10_content_wrapper -->
+    </div><!-- /dr10_primary_container -->
+    <footer class="dr10_footer">
+      &copy; Diego Ruiz | <a href="mailto:dieg.ruiz098@gmail.com">dieg.ruiz098@gmail.com</a> <span class="dr10_footer_extra">| <a href="http://www.linkedin.com/pub/diego-ruiz/2b/2/958" target="_blank">LinkedIn</a></span>
+    </footer>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/resume.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      $(function(){
+        $('.dropdown-toggle').dropdown()  
+      })
+  </script>
+  </body>
+</html>
